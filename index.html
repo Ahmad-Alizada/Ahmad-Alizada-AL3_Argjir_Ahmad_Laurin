@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onlineshop Gitarre</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="w3-bar sticky-header" id="myNavbar">
+    <div class="w3-bar-item logo">
+      <a href="./index.html" class="w3-button logo-text">
+        <img src="./images/Logo.png" alt="Guitar World" class="logo-image" />
+      </a>
+    </div>
+    <div class="w3-bar-item w3-right" id="navLinks">
+      <a href="./index.html" class="w3-button active">Home</a>
+      <a href="./products.html" class="w3-button">Produkte</a>
+      <a href="./game.html" class="w3-button">Game</a>
+      <a href="./contact.html" class="w3-button">Kontakt</a>
+    </div>
+    <a href="#" class="icon" id="menuToggle">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+
+  <!-- herobanner -->
+  <div class="herobanner">
+    <!-- list item -->
+    <div class="list">
+      <div class="item">
+        <img src="images/Gretsch G9126-ACE Guitar Ukulele.jpg" />
+        <div class="hero-content">
+          <div class="author">Neu im Shop</div>
+          <div class="title">Gretsch G9126-ACE</div>
+          <div class="topic">20% OFF</div>
+          <div class="des">
+            Die Gretsch® G9126 A.C.E. ist die Performance-Version der
+            beliebten G9126 Gitarren-Ukulele und bietet Gitarristen allerorten
+            wunderschön klingende Ukulelenklänge. Mit sechs Saiten, die von
+            "A" nach "A" in Standardgitarrenintervallen gestimmt sind, ist die
+            G9126 A.C.E. perfekt für Ukulele-Arrangements mit erweitertem
+            Tonumfang.
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/Ibanez BTB846-CBL.jpg" />
+        <div class="hero-content">
+          <div class="author">Neu im Shop</div>
+          <div class="title">Ibanez BTB846-CBL</div>
+          <div class="topic">10% OFF</div>
+          <div class="des">
+            Der Ibanez BTB846 ist ein sechssaitiger E-Bass mit massivem Korpus
+            aus der BTB-Serie, der 2017 eingeführt wurde. Er wird in
+            Indonesien als Teil der Standard-Linie gefertigt.
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/Cascha Premium Mahagoni Sopran Bundle German.jpg" />
+        <div class="hero-content">
+          <div class="author">Neu im Shop</div>
+          <div class="title">Cascha Premium</div>
+          <div class="topic">15% OFF</div>
+          <div class="des">
+            Einfach auspacken und loslegen! Die Ukulele ist ein fantastisches
+            Instrument. Sie ist handlich, klein und leicht zu lernen. Diese
+            Sopran-Ukulele überzeugt durch ihre hohe Qualität und die
+            hervorragenden Klangeigenschaften der verwendeten Tonhölzer.
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="images/Gibson Les Paul Standard 60s BB.jpg" />
+        <div class="hero-content">
+          <div class="author">Neu im Shop</div>
+          <div class="title">Gibson Les Paul</div>
+          <div class="topic">20% OFF</div>
+          <div class="des">
+            Die Gibson Les Paul Original Serie umfasst Les Paul Modelle, die
+            nach den original Spezifikationen der legendären Vintage Les Pauls
+            der 50er und 60er Jahre gefertigt werden.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- list thumnail -->
+    <div class="thumbnail">
+      <div class="item">
+        <img src="images/Ibanez BTB846-CBL.jpg" />
+      </div>
+      <div class="item">
+        <img src="images/Cascha Premium Mahagoni Sopran Bundle German.jpg" />
+      </div>
+      <div class="item">
+        <img src="images/Gibson Les Paul Standard 60s BB.jpg" />
+      </div>
+      <div class="item">
+        <img src="images/Gretsch G9126-ACE Guitar Ukulele.jpg" />
+      </div>
+    </div>
+    <!-- next prev -->
+
+    <div class="arrows">
+      <button id="prev"><</button>
+      <button id="next">></button>
+    </div>
+    <!-- time running -->
+    <div class="time"></div>
+  </div>
+
+  <section class="products-section">
+    <div class="w3-row-padding">
+      <h1>Beliebte Produkte</h1>
+      <br />
+      <div class="w3-col l3 m6 w3-margin-bottom product-container">
+        <img src="./images/Harley Benton BZ-6000 II NT.jpg" alt="Product 1" />
+        <h5>Harley Benton BZ-6000 II NT</h5>
+        <h3>515 CHF</h3>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./images/Yamaha C40 BL.jpg" alt="Product 2" />
+        <h5>Yamaha C40 BL</h5>
+        <h3>111 CHF</h3>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./images/Squier CV Bass VI LRL 3TS.jpg" alt="Product 3" />
+        <h5>Squier CV Bass VI LRL 3TS</h5>
+        <h3>413 CHF</h3>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="./images/Startone CG851 1-4.jpg" alt="Product 4" />
+        <h5>Startone CG851 1-4</h5>
+        <h3>36 CHF</h3>
+      </div>
+    </div>
+    <div class="all-products-container">
+      <a href="./products.html" class="w3-button w3-black all-products-button">
+        Alle Produkte ansehen
+      </a>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="w3-container w3-light-grey contact-container">
+      <h2 class="w3-center">Nehmen Sie Kontakt auf!</h2>
+      <p class="w3-center">
+        Als Guitar World-Kunde haben Sie die Möglichkeit, unsere Spezialisten
+        und Berater zu kontaktieren.
+      </p>
+      <div class="w3-center">
+        <a href="./contact.html" class="w3-button w3-black">Jetzt kontaktieren!</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p class="w3-center">
+      <strong>Über Uns</strong>
+      Diese Website ist ein Schulprojekt und verkauft offiziell keine
+      Gitarren.<br />
+      Ahmad Alizada<br />
+      Laurin Winkler<br />
+      Argjir Shaqiri
+    </p>
+  </div>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/hero.js"></script>
+  <script src="./js/common.js"></script>
+</body>
+
+</html>
