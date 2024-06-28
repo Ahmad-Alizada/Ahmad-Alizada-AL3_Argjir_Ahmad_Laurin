@@ -1,0 +1,167 @@
+/* Common Styles */
+body {
+  font-family: "Aleo";
+  margin: 0;
+  padding: 0;
+}
+
+.w3-content.contact-page {
+  flex: 1;
+}
+
+.footer.contact-page {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  flex-shrink: 0;
+}
+
+.w3-content {
+  flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Aleo";
+  font-weight: 600;
+}
+
+.w3-bar {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: left !important;
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  padding-left: 11vw !important;
+  background-color: #e79a5d;
+  color: #3c180e;
+}
+/* Sticky Header Styles */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #e79a5d;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-header .w3-bar a {
+  color: black;
+}
+
+body.sticky-padding {
+  padding-top: 50px;
+}
+
+/* Logo styles */
+.logo-text {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 30px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.w3-bar a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.w3-bar-item a.active {
+  font-weight: bold;
+  color: white;
+}
+
+.w3-bar-item:not(.logo) a:hover {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+
+.responsive {
+  display: block;
+}
+.icon {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .w3-bar-item.w3-right {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+}
+
+.logo-text:hover {
+  background-color: transparent !important;
+}
+
+.footer {
+  background-color: #e79a5d;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.footer strong {
+  font-size: 1.2em;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.fa-brands {
+  color: black;
+  font-size: 16px;
+  margin: 5px;
+  padding-bottom: 10px;
+}
+
+.contact-container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.error {
+  color: red;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .w3-bar {
+    padding-left: 10px; /* Adjust padding for smaller screens */
+    display: flex !important;
+    justify-content: space-between !important;
+    padding-left: 10px !important;
+  }
+
+  .w3-bar a {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+.confirmation-message {
+  display: none;
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 15px;
+  margin-top: 15px;
+  text-align: center;
+}

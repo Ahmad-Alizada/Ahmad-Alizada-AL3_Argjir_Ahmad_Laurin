@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onlineshop Gitarre</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body class="contact-page">
+  <div class="w3-bar sticky-header" id="myNavbar">
+    <div class="w3-bar-item logo">
+      <a href="./index.html" class="w3-button logo-text">
+        <img src="./images/Logo.png" alt="Guitar World" class="logo-image" />
+      </a>
+    </div>
+    <div class="w3-bar-item w3-right" id="navLinks">
+      <a href="./index.html" class="w3-button">Home</a>
+      <a href="./products.html" class="w3-button">Produkte</a>
+      <a href="./game.html" class="w3-button">Game</a>
+      <a href="./contact.html" class="w3-button active">Kontakt</a>
+    </div>
+    <a href="#" class="icon" id="menuToggle">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="w3-content">
+    <div class="w3-container">
+      <br />
+      <br />
+      <h2 class="w3-center">Nehmen Sie Kontakt mit uns auf!</h2>
+      <br />
+      <form class="w3-container" id="myForm">
+        <div class="w3-row w3-section">
+          <div class="w3-col s12 m6">
+            <label class="form-label">Name</label>
+            <input class="w3-input w3-border name-input" type="text" name="name" required />
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="w3-col s12 m6">
+            <label class="form-label">E-Mail-Adresse</label>
+            <input class="w3-input w3-border email-input" type="email" name="email" required />
+            <span class="error" id="emailError"></span>
+          </div>
+        </div>
+        <div class="w3-row w3-section">
+          <div class="w3-col s12 m6">
+            <label class="form-label">Telefon</label>
+            <input class="w3-input w3-border phone-input" type="tel" name="phone" required />
+            <span class="error" id="phoneError"></span>
+          </div>
+          <div class="w3-col s6 m3">
+            <label class="form-label">PLZ</label>
+            <input class="w3-input w3-border zip-input" type="text" name="zip" required />
+            <span class="error" id="zipError"></span>
+          </div>
+          <div class="w3-col s6 m3">
+            <label class="form-label">Stadt</label>
+            <input class="w3-input w3-border city-input" type="text" name="city" required />
+            <span class="error" id="cityError"></span>
+          </div>
+        </div>
+        <div class="w3-row w3-section">
+          <div class="w3-col">
+            <label class="form-label">Nachricht</label>
+            <textarea class="w3-input w3-border message-input" name="message" rows="4" required></textarea>
+            <span class="error" id="messageError"></span>
+          </div>
+        </div>
+        <button class="w3-button w3-black w3-block w3-section w3-ripple w3-padding" id="submit" type="button">
+          Absenden
+        </button>
+      </form>
+      <div id="confirmationMessage" class="confirmation-message">
+        <p>Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="w3-center">
+      <strong>Über Uns</strong>
+      Diese Website ist ein Schulprojekt und verkauft offiziell keine
+      Gitarren.<br />
+      Ahmad Alizada<br />
+      Laurin Winkler<br />
+      Argjir Shaqiri
+    </p>
+  </div>
+
+  <script src="./js/index.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/databaseClient.js"></script>
+</body>
+
+</html>

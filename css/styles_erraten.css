@@ -1,0 +1,81 @@
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center; 
+  background-color:bisque;
+}
+
+.header,
+.footer {
+  height: 70px;
+  color: #ffffff;
+  background-color: #2487c6;
+}
+
+/* body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+*/
+
+.container {
+  margin-top: 50px;
+}
+
+audio {
+  margin: 20px 0;
+}
+
+#quiz {
+  display: none;
+}
+
+button {
+  background-color: #1b6e7c;
+  color: white;
+  border:#2487c6;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/*
+button:hover {
+  background-color: #0056b3;
+}*/
+
+
+
+input {
+  padding: 10px;
+  width: 200px;
+}
+
+#infoBtn {
+  display: flex;
+  margin: auto;
+  background-color: coral;
+}
+
+
+.hero-sectionGAME {
+  background-image: url("../media/monkey-3507317_21.jpg") ;
+  background-size: cover;
+  background-position:unset;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*Sound läuft */
+
+
